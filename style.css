@@ -1,0 +1,544 @@
+
+/* header*/
+header{
+    max-height: 100px;
+    margin-top: 30px;
+}
+#navbar{
+    margin-left: 40%;    
+    width: 30%;
+    display: flex;
+    
+    flex-wrap: wrap;
+    font-weight: 600;
+    
+}
+#strict{
+    font-size:25px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+#logo{
+    margin-left: 15%;
+    margin-top: 10px;
+}
+.linkservices , .linkblog{
+    display: none;
+    position: absolute;
+ background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
+}
+#aboutus:hover{
+    cursor: pointer;
+    background-color:#33adff;
+    color: white;
+}
+#contact:hover{
+    cursor: pointer;
+    background-color:#33adff;
+    color: white;
+}
+.services:hover{
+    cursor: pointer;
+    background-color:#33adff;
+    color: white;
+}
+.blog:hover{
+    cursor: pointer;
+    background-color:#33adff;
+    color: white;
+}
+.services:hover .linkservices{
+    display: block;
+    
+
+    
+}
+.blog:hover .linkblog{
+    display: block;
+}
+#headerdiv{
+    display: flex;
+}
+@media screen and (max-width:992px){
+    #navbar{
+        margin-left: 20%;
+        width: 50%;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:768px){
+    header{
+        margin-top: 10px;
+    }
+    #navbar {
+        margin-left: 10%;
+        width:50%;
+        font-weight: 500;
+        font-size: 13px;
+    }
+    #logo{
+        margin-left: 10%;
+        width: 30px;
+        height: 30px;
+        margin-top: 20px;
+    }
+    #strict{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+}
+/*divider line*/
+
+
+.divided{
+    display: flex;
+}
+.divider{
+    flex-grow: 1;
+    
+    border-bottom: 1px solid black;
+    margin:0 60px;
+}
+@media screen and (max-width:768px){
+    .divider{
+        margin:0 20px;
+    }
+}
+/*section 1*/
+#section1{
+    margin-top: 70px;
+}
+#section1 p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+@media screen and (max-width:768px){
+    #section1{
+        margin-top: 50px;
+    }
+    #section1 h2{
+        font-size: 20px;
+    }
+    #section1 p{
+        font-size: 15px;
+    }
+}
+/*section 2*/
+#section2{
+    margin-top: 180px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    width: 100%;
+   
+}
+.wrapper{
+    align-items: center;
+    width: 25%;
+}
+.backgroundimg{
+    background:linear-gradient(to right,#33bbff 50%,#66c2ff 50%);
+    width: 90px;
+    height:85px;
+    margin:auto;
+}
+@media screen and (max-width:992px){
+    #section2{
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width:768px){
+    #section2{
+        margin-top: 100px;
+    }
+    .wrapper{
+        width: 30%;
+    }
+    #section2 h5{
+        font-size: 15px;
+        
+    }
+}
+
+/*section 3*/
+#section3{
+    margin-top: 100px;
+}
+.grid-container{
+    display: flex;
+    overflow: hidden;
+    
+    justify-content:center;
+    flex-wrap: wrap;
+    
+    
+}
+.grid-item{
+    position: relative;
+    margin: 10px;
+
+}
+
+.hovereffect1 , .hovereffect2 ,.hovereffect3 , .hovereffect4 , .hovereffect5 , .hovereffect6{
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #33adff ;
+   display: none;
+   opacity: 0.8;
+   z-index: 1;
+    
+}
+
+.img1:hover .hovereffect1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.img2:hover .hovereffect2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img3:hover .hovereffect3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img4:hover .hovereffect4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img5:hover .hovereffect5{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img6:hover .hovereffect6{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.imgHoverIcons{
+    margin: auto;
+    border: 0.5px solid white;
+    width: 35px;
+    height: 30px;
+    border-radius: 5px;
+    
+}
+.search:hover{
+    cursor: pointer;
+   
+}
+
+.link:hover{
+    cursor: pointer;
+}
+.img-target {
+    position: fixed;
+   
+    background: rgba(0,0,0,.7);
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: opacity .5s ease-in-out;
+    
+    transition: opacity .5s ease-in-out;
+    overflow: hidden;
+}
+    
+
+.img-target img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+   
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+    box-sizing: border-box;
+    -webkit-transition: .5s ease-in-out;
+   
+    transition: .5s ease-in-out;
+}
+    
+
+    
+a.img-close {
+    display: block;
+    width:50px;
+    height:50px;
+    box-sizing: border-box;
+    background: white;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: -80px;
+    right: 0;
+    -webkit-transition: .5s ease-in-out;
+ 
+    transition: .5s ease-in-out;
+}
+    
+   
+    
+a.img-close:before {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 26px;
+    top:10px;
+    -webkit-transform:rotate(45deg);
+   
+    transform:rotate(45deg);
+}
+    
+    
+    
+a.img-close:after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 26px;
+    top:10px;
+    -webkit-transform:rotate(-45deg);
+    
+    transform:rotate(-45deg);
+}
+    
+    
+.img-target p{
+    
+    width: 100%;   
+    position: absolute;
+    
+    margin-top:350px ;
+    
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+    box-sizing: border-box;
+    -webkit-transition: .5s ease-in-out;
+    background-color: black;
+    color: white;
+    transition: .5s ease-in-out;
+}
+
+.img-target:target {
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+}
+    
+.img-target:target img {
+    max-height: 100%;
+    max-width: 100%;
+}
+    
+.img-target:target a.img-close {
+    top: 0px;
+}
+.img-target:target p {
+       
+    max-width: 100%;
+}
+.wrap-icons{
+   
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    height: 20%;
+    justify-content:center;
+    
+}
+.padIcons{
+    padding-top: 6px;
+    color: white;
+}
+@media screen and (max-width:992px){
+    #section3 img{
+        width: 150px;
+        height: 100px;
+    }
+}
+@media screen and (max-width:768px){
+  #section3 h2{
+      font-size: 20px;
+  }
+}
+/*section 4*/
+#section4{
+    margin-top: 100px;
+}
+
+#formBack{
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #1C2833 ;
+    
+    
+  
+   
+}
+#formImg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+}
+
+.formDiv{
+    
+    position: relative;
+  margin: 50px auto 70px auto;
+    width: 50%;
+    
+    overflow: hidden;
+  
+}
+#inputs {
+    color: white;
+    width: 98%;
+    border:1px solid white;
+    border-radius:5px;
+    height: 50px;
+    background: transparent;
+    margin-top: 20px;
+}
+textarea{
+    border:1px solid white;
+    border-radius:5px;
+ 
+    color: white;
+    height: 150px;
+    width: 98%;
+    background: transparent;
+}
+textarea::placeholder{
+    color: white;
+    padding-left: 2%;
+    padding-top: 2% ;
+}
+#inputs::placeholder{
+    padding-left:2%;
+    color: white;
+}
+
+input[type="checkbox"],#slabel{
+    float: left;
+}
+input[type="checkbox"]{
+    margin-top: 27px;   
+}
+#slabel{
+    color: white;
+    margin-top: 20px;
+    margin-left: 3%;
+}
+.buttons{
+    margin-top: 10px;
+    float: right;
+    width: 23%;
+    height: 45px;
+}
+@media screen and (max-width:768px){
+    #section4 h2{
+        font-size: 20px;
+
+    }
+    #inputs{
+        height: 30px;
+        margin-top: 10px;
+    }
+    input::placeholder{
+        font-size: 13px;
+    }
+    textarea::placeholder{
+        font-size: 13px;
+
+    }
+    #section4 label{
+        font-size: 13px;
+    }
+    #section4 button{
+        width: 30%;
+        height: 36px;
+        font-size: 13px;
+
+    }
+}
+/*footer*/
+
+footer{
+    margin-top: 30px;position: relative;margin-bottom: 20px;
+}
+.flexIcons{
+   
+   
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+.icons{
+    margin-right: 10%;
+    display: flex;
+    width: 13%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.backForIcons{
+    width: 30px;
+    height: 30px;
+    background-color:#33adff;
+    border: 0.5px solid #1aa3ff;
+    border-radius: 2px;
+}
+.backForIcons:hover{
+    cursor: pointer;
+}
+.social {
+    padding-top: 7.5px;
+    color: white;
+}
+@media screen and (max-width:1200px){
+ .icons{
+     width: 20%;
+ }   
+}   
+@media screen and (max-width:768px){
+    footer{
+        margin-top: 10px;
+
+    }
+    footer span{
+        font-size: 13px;
+    }
+    .icons{
+        width: 30%;
+    }
+}
